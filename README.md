@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
-    - uses: meilleursbiens/react-deploy-to-s3-action@main
+    - uses: meilleursbiens/action-nx-react-to-aws-s3@main
       with:
         args: --acl public-read --follow-symlinks --delete
       env:
